@@ -80,17 +80,29 @@
                       <input type="radio" name="relevance" id="relevance1" value="-1" {% if judgement.relevance == -1 %} checked {% endif %}>
                       Unjudged
                     </label><br>
+                      <label class="radio">
+                     <input type="radio" name="relevance" id="relevance5" value="5" {% if judgement.relevance == 5 %} checked {% endif %}>
+                      Very highly relevant (5)
+                    </label><br>
+                   <label class="radio">
+                     <input type="radio" name="relevance" id="relevance4" value="4" {% if judgement.relevance == 4 %} checked {% endif %}>
+                      Highly relevant (4)
+                    </label><br>
+                   <label class="radio">
+                     <input type="radio" name="relevance" id="relevance3" value="3" {% if judgement.relevance == 3 %} checked {% endif %}>
+                      Relevant (3)
+                    </label><br>
                     <label class="radio">
                      <input type="radio" name="relevance" id="relevance2" value="2" {% if judgement.relevance == 2 %} checked {% endif %}>
-                      Highly relevant
+                      Moderately relevant (2)
                     </label><br>
                     <label class="radio">
                       <input type="radio" name="relevance" id="relevance1" value="1" {% if judgement.relevance == 1 %} checked {% endif %}>
-                      Somewhat relevant
+                      Partially relevant (1)
                     </label><br>
                     <label class="radio">
                       <input type="radio" name="relevance" id="relevance0" value="0" {% if judgement.relevance == 0 %} checked {% endif %}>
-                      Not relevant
+                      Not relevant (0)
                     </label>
                 </div>
                  <div class="control-group">

@@ -45,7 +45,8 @@ class Query(models.Model):
 
 class Judgement(models.Model):
 
-	labels = {-1: 'Unjudged', 0: 'Not relvant', 1: 'Somewhat relevant', 2:'Highly relevant'}
+	labels = {-1: 'Unjudged', 0: 'Not relvant', 1: 'Partially relevant', 2:'Moderately relevant', 3: 'Relevant',\
+                    4: 'Highly Relevant', 5: 'Very highly relevant'}
 
 	query = models.ForeignKey(Query)
 	document = models.ForeignKey(Document)

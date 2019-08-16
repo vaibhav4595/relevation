@@ -28,8 +28,11 @@
                     <td style="color: 
                       {% if judgement.relevance == -1 %} black {% endif %}
                       {% if judgement.relevance == 0 %} red {% endif %}
-                      {% if judgement.relevance == 1 %} orange {% endif %}
-                      {% if judgement.relevance == 2 %} green {% endif %}
+                      {% if judgement.relevance == 1 %} pink {% endif %}
+                      {% if judgement.relevance == 2 %} magenta {% endif %}
+                      {% if judgement.relevance == 3 %} orange {% endif %}
+                      {% if judgement.relevance == 4 %} green {% endif %}
+                      {% if judgement.relevance == 5 %} lime {% endif %}
                     " >{{ judgement.label }}</td>
                   </tr>
                 {% endfor %}
